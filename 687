@@ -1,0 +1,11 @@
+def solve_farm_puzzle():
+    input_data = input().split()
+    n = int(input_data[0])
+    m = int(input_data[1])
+    if m % 2 != 0 or m < 2 * n or m > 4 * n:
+        print("NO SOLUTIONS! NO SOLUTIONS!")
+        return
+    R = (m - 2 * n) // 2
+    C = n - R
+    print(f"{C} {R}")
+solve_farm_puzzle()
