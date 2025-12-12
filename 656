@@ -1,0 +1,11 @@
+def calculate_simple_interest():
+    print("Введіть початкову суму (n, грн):")
+    n = float(input())
+    print("Введіть річну відсоткову ставку (p, %):")
+    p = float(input())
+    print("Введіть кількість років (m):")
+    m = int(input())
+    final_amount = n * (1 + (p * m) / 100)
+    print("\nВихідні дані:")
+    print(f"{final_amount:.2f}")
+calculate_simple_interest()
