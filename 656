@@ -1,5 +1,6 @@
 def calculate_simple_interest():
     final_amount = n * (1 + (p * m) / 100)
+    return final_amount
 print("Введіть початкову суму (n, грн):")
 n = float(input())
 print("Введіть річну відсоткову ставку (p, %):")
