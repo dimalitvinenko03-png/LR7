@@ -1,0 +1,18 @@
+def transform_string(s, n, m):
+    check_limit = min(m, len(s))
+    substring_to_check = s[:check_limit]
+    uppercase_count = 0
+    for char in substring_to_check:
+        if char.isupper():
+            uppercase_count += 1
+    if uppercase_count >= n:
+        return s.upper()
+    else:
+        return s
+string1 =input()
+n_str=input()
+n_list=n_str.split(" ")
+n_list=[int(i) for i in n_list]
+n, m = n_list
+result = transform_string(string1, n, m)
+print(result)
