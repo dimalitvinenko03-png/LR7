@@ -1,4 +1,4 @@
-def calculate_simple_interest():
+def calculate_simple_interest(n,p,m):
     final_amount = n * (1 + (p * m) / 100)
     return final_amount
 print("Введіть початкову суму (n, грн):")
