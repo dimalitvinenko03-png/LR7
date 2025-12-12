@@ -1,0 +1,8 @@
+def create_histogram(numbers):
+    for number in numbers:
+        histogram_bar = '*' * number
+        print(histogram_bar)
+input_data = input()
+number_strings = input_data.split(',')
+data1 = [int(s.strip()) for s in number_strings]
+create_histogram(data1)
