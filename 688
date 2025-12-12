@@ -1,0 +1,17 @@
+def get_permutations(elements):
+    if len(elements) == 0:
+        return [[]]
+    all_permutations = []
+    for i in range(len(elements)):
+        current_element = elements[i]
+        remaining_elements = elements[:i] + elements[i+1:]
+        sub_permutations = get_permutations(remaining_elements)      
+        for p in sub_permutations:
+            all_permutations.append([current_element] + p)     
+    return all_permutations
+print("Введіть послідовність різних цілих чисел, розділених пробілом (наприклад: 1 2 3):")
+input_line = input()
+input_elements = [int(s) for s in input_line.split()]
+result_permutations = get_permutations(input_elements)
+print("\nВихідні дані:")
+print(result_permutations)
