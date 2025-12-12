@@ -1,0 +1,20 @@
+def power_manual(a, n):
+    if n == 0:
+        return 1.0
+    abs_n = abs(n)
+    result = 1.0
+    
+    for _ in range(abs_n):
+        result *= a
+    
+    if n < 0:
+        return 1.0 / result
+    else:
+        return result
+print("Введіть дійсне число a та ціле число n (наприклад: 2 1):")
+input_data = input().split()
+a = float(input_data[0])
+n = int(input_data[1]) 
+result = power_manual(a, n) 
+print("\nВихідні дані:")
+print(f"{result}")
