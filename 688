@@ -13,5 +13,5 @@ print("Введіть послідовність різних цілих чис�
 input_line = input()
 input_elements = [int(s) for s in input_line.split()]
 result_permutations = get_permutations(input_elements)
-print("\nВихідні дані:")
+print("Вихідні дані:")
 print(result_permutations)
